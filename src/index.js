@@ -2,12 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Age from './Age';
+import Sons from './Sons';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <div><App name="Hajra Shahid" age={30-3}/><br/>
+  <div><Age age={35}/></div><br/>
+  <div><Sons name1="Wali" age1={4.5} name2="Hadi" age2={1.5}/></div>
+  </div>,
   document.getElementById('root')
 );
 
